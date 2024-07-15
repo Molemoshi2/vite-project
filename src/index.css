@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    background-color: hsl(217, 100%, 97%);
+    color: hsl(213, 96%, 18%);
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+     
+}
+.main-cont{
+    display: flex;
+    background-color: white;
+    width: 50%;
+    height: 30rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap:10%;
+    /*margin-top: 5rem;*/
+
+}
+
+.listItem p{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: lighter;
+    font-size: medium;
+    color: hsl(231, 11%, 63%);
+}
+h4{
+    font-weight: 450;
+}
+/*Second child*/
+.child2{
+    position: relative;
+}
+
+
+/*main child*/
+.main-child{
+    background-image: url(./assets/images/bg-sidebar-desktop.svg);
+    background-position: bottom;
+    width: 25%;
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    color: white;
+    /*height*/
+}
+li{
+    position: relative;
+    padding-left: 1rem;
+}
+li::before{
+    content: '';
+    border: white 0.1px solid;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 60%;
+    left: -1.5rem;
+    top: -0.25rem;
+    
+}
+
+.listItem{
+    line-height: 0;
+    margin-bottom: 2.5rem;
+}
+.listItem p{
+    font-weight: 100;
+}
+
+/*Styling the inner card*/
+.inputLabelDiv{
+    margin-top: 1rem;
+}
+.inputLabelDiv input{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    border: 1px hsl(229, 24%, 87%) solid;
+}
+
+
+.InnerCardHeading{
+    margin-bottom: 0;
+}
+.InnerCardP{
+    margin-top: 0.4rem;
+    margin-bottom: 1.4rem;
+    color: hsl(231, 11%, 63%);
+}
+
+/*styling the button*/
+
+.Button-btn{
+    width: 6rem;
+    height: 2.3rem;
+    margin-top: 5.7rem;
+    margin-left: 21rem;
+    background-color:  hsl(213, 96%, 18%);
+    color: white;
+    border: none;
+    border-radius: 0.35rem;
+}
+.Button-btn:hover{
+    background-color: hsl(213, 69%, 35%);
+    cursor: pointer;
+}
